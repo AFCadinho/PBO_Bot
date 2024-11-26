@@ -1,5 +1,8 @@
-2024-11-26 12:37:28,186 - INFO - root - Successfully loaded extension: events.py
-2024-11-26 12:37:28,190 - INFO - root - EventNotifier task has started.
-2024-11-26 12:37:28,190 - INFO - root - Successfully loaded extension: event_notifier.py
-2024-11-26 12:37:28,190 - INFO - root - Successfully loaded extension: admin.py
-2024-11-26 12:37:28,191 - INFO - discord.client - logging in using static token
+2024-11-26 22:33:29,395 - INFO - root - Successfully loaded extension: admin.py
+2024-11-26 22:33:29,421 - INFO - root - Successfully loaded extension: events.py
+2024-11-26 22:33:29,421 - INFO - discord.client - logging in using static token
+2024-11-26 22:33:30,369 - INFO - discord.gateway - Shard ID None has connected to Gateway (Session ID: 414810bf9e3b51b4eb8c907c03879598).
+2024-11-26 22:33:32,390 - INFO - root - Loaded cogs: ['Admin', 'Events']
+2024-11-26 22:33:32,390 - INFO - root - We have successfully logged in as AFC Squad Official Bot#3767
+2024-11-26 22:33:32,390 - INFO - root - ------------------------------------------------
+2024-11-26 22:33:32,821 - INFO - root - Slash commands synced

@@ -39,7 +39,7 @@ class Events(commands.Cog):
                 schedule = schedules.CREW_WARS_SCHEDULE
                 event_name = "Crew Wars"
             else:
-                await interaction.response.send_message("Invalid event type. Choose from: bug_catching, fishing, dynamax.", ephemeral=True)
+                await interaction.response.send_message("Invalid event type. Choose from: bug_catching, fishing, dynamax, crew_wars.", ephemeral=True)
                 return
 
             now = datetime.now()
@@ -50,21 +50,27 @@ class Events(commands.Cog):
             for event in schedule:
                 event_day = str(event["day"])
                 event_hour = int(event["hour"])
+                event_minute = int(event.get("minute", 0))  # Default to 0 if not provided
+                event_tier = event.get("tier", None)  # Include tier if available
 
                 # Calculate the next occurrence of the event
                 days_until_event = (
                     ["Monday", "Tuesday", "Wednesday", "Thursday",
-                        "Friday", "Saturday", "Sunday"].index(event_day)
+                     "Friday", "Saturday", "Sunday"].index(event_day)
                     - now.weekday() + 7
                 ) % 7
                 event_time = now + timedelta(days=days_until_event)
                 event_time = event_time.replace(
-                    hour=event_hour, minute=0, second=0, microsecond=0)
+                    hour=event_hour, minute=event_minute, second=0, microsecond=0)
 
                 # Check if this event is the nearest
                 time_difference = event_time - now
                 if timedelta(0) < time_difference < min_time_difference:
-                    nearest_event = {"day": event_day, "time": event_time}
+                    nearest_event = {
+                        "day": event_day,
+                        "time": event_time,
+                        "tier": event_tier  # Add tier to nearest event if available
+                    }
                     min_time_difference = time_difference
 
             # If no future event is found (unlikely), handle gracefully
@@ -75,13 +81,13 @@ class Events(commands.Cog):
             # Format the nearest event
             event_day = nearest_event["day"]
             event_time = nearest_event["time"]
+            event_tier = nearest_event.get("tier", None)  # Default to None if tier is not available
 
             # Convert to Unix timestamp
             if isinstance(event_time, datetime):
                 unix_timestamp = int(event_time.timestamp())
             else:
-                raise TypeError(f"""Expected datetime object, got {
-                                type(event_time)} instead""")
+                raise TypeError(f"Expected datetime object, got {type(event_time)} instead")
 
             # Create the embed
             embed = discord.Embed(
@@ -94,8 +100,14 @@ class Events(commands.Cog):
                 value=f"<t:{unix_timestamp}:F> - (<t:{unix_timestamp}:R>)",
                 inline=False,
             )
+
+            # Add tier details if available
+            if event_tier:
+                embed.add_field(name="Tier", value=event_tier, inline=False)
+
             embed.set_footer(
-                text="All times are automatically adjusted to your local timezone.")
+                text="All times are automatically adjusted to your local timezone."
+            )
 
             # Send the response
             await interaction.response.send_message(embed=embed)

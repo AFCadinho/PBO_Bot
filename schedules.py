@@ -33,13 +33,13 @@ DYNAMAX_INVASION_SCHEDULE = [
 ]
 
 CREW_WARS_SCHEDULE = [
-    {"day": "Saturday", "hour": 4, "role_id": 1310224095228465214},
-    {"day": "Sunday", "hour": 1, "role_id": 1310224095228465214},
-    {"day": "Sunday", "hour": 19, "role_id": 1310224095228465214},
-    {"day": "Monday", "hour": 17, "role_id": 1310224095228465214},
-    {"day": "Wednesday", "hour": 10, "role_id": 1310224095228465214},
-    {"day": "Wednesday", "hour": 20, "role_id": 1310224095228465214},
-    {"day": "Thursday", "hour": 20, "role_id": 1310224095228465214},
+    {"day": "Saturday", "hour": 4, "role_id": 1310224095228465214, "tier": "OU"},
+    {"day": "Sunday", "hour": 1, "role_id": 1310224095228465214, "tier": "OU"},
+    {"day": "Sunday", "hour": 19, "role_id": 1310224095228465214, "tier": "OU"},
+    {"day": "Monday", "hour": 17, "role_id": 1310224095228465214, "tier": "UU"},
+    {"day": "Wednesday", "hour": 10, "role_id": 1310224095228465214, "tier": "UU"},
+    {"day": "Wednesday", "hour": 20, "role_id": 1310224095228465214, "tier": "OU"},
+    {"day": "Thursday", "hour": 20, "role_id": 1310224095228465214, "tier": "UU"},
 ]
 
 RUBBING_ADINHOS_BELLY = [
