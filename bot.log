@@ -1,0 +1,5 @@
+2024-11-26 12:37:28,186 - INFO - root - Successfully loaded extension: events.py
+2024-11-26 12:37:28,190 - INFO - root - EventNotifier task has started.
+2024-11-26 12:37:28,190 - INFO - root - Successfully loaded extension: event_notifier.py
+2024-11-26 12:37:28,190 - INFO - root - Successfully loaded extension: admin.py
+2024-11-26 12:37:28,191 - INFO - discord.client - logging in using static token
