@@ -22,7 +22,7 @@ FISHING_COMPETITION_SCHEDULE = [
 ]
 
 DYNAMAX_INVASION_SCHEDULE = [
-    {"day": "Wednesday", "hour": 11, "role_id": 1310224206637830206},
+    {"day": "Wednesday", "hour": 2, "role_id": 1310224206637830206},
     {"day": "Wednesday", "hour": 19, "role_id": 1310224206637830206},
     {"day": "Friday", "hour": 2, "role_id": 1310224206637830206},
     {"day": "Friday", "hour": 19, "role_id": 1310224206637830206},
@@ -33,13 +33,13 @@ DYNAMAX_INVASION_SCHEDULE = [
 ]
 
 CREW_WARS_SCHEDULE = [
-    {"day": "Saturday", "hour": 4, "role_id": 1310224095228465214, "tier": "OU"},
-    {"day": "Sunday", "hour": 1, "role_id": 1310224095228465214, "tier": "OU"},
-    {"day": "Sunday", "hour": 19, "role_id": 1310224095228465214, "tier": "OU"},
-    {"day": "Monday", "hour": 17, "role_id": 1310224095228465214, "tier": "UU"},
+    {"day": "Saturday", "hour": 5, "role_id": 1310224095228465214, "tier": "OU"},
+    {"day": "Sunday", "hour": 2, "role_id": 1310224095228465214, "tier": "OU"},
+    {"day": "Sunday", "hour": 20, "role_id": 1310224095228465214, "tier": "OU"},
+    {"day": "Monday", "hour": 18, "role_id": 1310224095228465214, "tier": "UU"},
     {"day": "Wednesday", "hour": 11, "role_id": 1310224095228465214, "tier": "UU"},
-    {"day": "Wednesday", "hour": 20, "role_id": 1310224095228465214, "tier": "OU"},
-    {"day": "Thursday", "hour": 20, "role_id": 1310224095228465214, "tier": "UU"},
+    {"day": "Wednesday", "hour": 21, "role_id": 1310224095228465214, "tier": "OU"},
+    {"day": "Thursday", "hour": 21, "role_id": 1310224095228465214, "tier": "UU"},
 ]
 
 RUBBING_ADINHOS_BELLY = [
