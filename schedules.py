@@ -37,7 +37,7 @@ CREW_WARS_SCHEDULE = [
     {"day": "Sunday", "hour": 1, "role_id": 1310224095228465214, "tier": "OU"},
     {"day": "Sunday", "hour": 19, "role_id": 1310224095228465214, "tier": "OU"},
     {"day": "Monday", "hour": 17, "role_id": 1310224095228465214, "tier": "UU"},
-    {"day": "Wednesday", "hour": 10, "role_id": 1310224095228465214, "tier": "UU"},
+    {"day": "Wednesday", "hour": 11, "role_id": 1310224095228465214, "tier": "UU"},
     {"day": "Wednesday", "hour": 20, "role_id": 1310224095228465214, "tier": "OU"},
     {"day": "Thursday", "hour": 20, "role_id": 1310224095228465214, "tier": "UU"},
 ]
